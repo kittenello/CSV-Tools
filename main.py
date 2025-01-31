@@ -40,7 +40,7 @@ while True:
     elif bs == "2":
         current_dir = os.path.dirname(os.path.abspath(__file__))
         kittenello_dir = os.path.join(current_dir, ".kittenello")
-        script_path = os.path.join(kittenello_dir, "compress.py")
+        script_path = os.path.join(kittenello_dir, "com.py")
         if os.path.isdir(kittenello_dir) and os.path.isfile(script_path):
             subprocess.run(["python", script_path])
         else:
